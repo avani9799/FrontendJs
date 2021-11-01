@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="container mt-5" style=width:559px;>
+            <div class="row text-center my-3">
+                <table>
+                    <tbody class="tblbody">
+                        <tr>
+                            <div class="inputetxt">
+                                <input type="text" value="" id="screen" class="p-4 input_text my-3">
+                            </div>
+                        </tr>
+                        <tr>
+                                <td><button type="button" class="operation btn" value="+/-" onclick="getMinusPlus()">&#43;&#8725;&#8722;</button>
+                                </td>
+                                <td><button type="button" class="operation btn" value="root"
+                                        onclick="getRoot()">&#8730;</button></td>
+                                
+                               <td colspan="2"> <button type="button" class="operation btn-onof btn btn-light" value="On/c" onclick="disableInput()">ON/C</button></td>
+                            <td><button type="button" class="operation btn" value="/"
+                                    onclick="displayValue('/')">&divide;</button></td>
+                        </tr>
+                        <tr>
+                            <td> <button type="button" class="all-clear btn btn-light" value="AC"
+                                    onclick="clearValue()">AC</button></td>
+                            <td><button type="button" class="number btn btn-light" value="7"
+                                    onclick="displayValue('7')">7</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="8"
+                                    onclick="displayValue('8')">8</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="9"
+                                    onclick="displayValue('9')">9</button></td>
+                            <td> <button type="button" class="operation btn " value="*"
+                                    onclick="displayValue('*')">&times;</button></td>
+                        </tr>
+                        <tr>
+                            <td> <button type="button" class="operation last-entity-clear btn btn-light" value="CE"
+                                    onclick="getValue()">CE</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="4"
+                                    onclick="displayValue('4')">4</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="5"
+                                    onclick="displayValue('5')">5</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="6"
+                                    onclick="displayValue('6')">6</button></td>
+                            <td> <button type="button" class="operation btn" value="-"
+                                    onclick="displayValue('-')">-</button></td>
+                        </tr>
+                        <tr>
+                                <td><button type="button" class="operation btn" value="&#37"
+                                        onclick="displaySquare()">^</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="1"
+                                    onclick="displayValue('1')">1</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="2"
+                                    onclick="displayValue('2')">2</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="3"
+                                    onclick="displayValue('3')">3</button></td>
+                            <td rowspan="4"> <button type="button" class="operation plusbtn btn" value="+"
+                                    onclick="displayValue('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="number btn btn-light" value="00"
+                                    onclick="displayValue('00')">00</button></td>
+                            <td> <button type="button" class="number btn btn-light" value="0"
+                                    onclick="displayValue('0')">0</button></td>
+                            <td><button type="button" class="operator btn btn-light" value="."
+                                    onclick="displayValue('.')">.</button></td>
+                            <td> <button type="button" class="operation equal btn" value="="
+                                    onclick="calculate()">=</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" Bootstrap/js/jquery.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
